@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de Trading</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Foro de Trading</h1>
+    </header>
+    <main>
+        <!-- Sección de temas -->
+        <section id="topics">
+            <h2>Temas del Foro</h2>
+            <ul id="topic-list"></ul>
+            <button id="new-topic-btn">Crear Nuevo Tema</button>
+        </section>
+
+        <!-- Formulario para crear temas -->
+        <section id="new-topic-form" class="hidden">
+            <h2>Crear Nuevo Tema</h2>
+            <form id="topic-form">
+                <input type="text" id="topic-title" placeholder="Título del tema" required>
+                <textarea id="topic-description" placeholder="Descripción del tema" required></textarea>
+                <button type="submit">Publicar Tema</button>
+            </form>
+        </section>
+
+        <!-- Respuestas de un tema -->
+        <section id="replies" class="hidden">
+            <h2 id="replies-title">Respuestas</h2>
+            <ul id="reply-list"></ul>
+            <form id="reply-form">
+                <textarea id="reply-message" placeholder="Escribe tu respuesta..." required></textarea>
+                <button type="submit">Responder</button>
+            </form>
+            <button id="back-to-topics">Volver a los Temas</button>
+        </section>
+    </main>
+    
+	<script src="js/app.js"></script>
+    
+</body>
+</html>
